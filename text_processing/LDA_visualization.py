@@ -12,7 +12,7 @@ def LDA_visualization(text_,stop_words,n_topics):
     feature_names=np.array(vect.get_feature_names()) #get the name of features
 
     #print first 10 docuements
-    max_iterglearn.tools.print_topics(topics=range(n_topics),feature_names=feature_names,sorting=sorting,topics_per_chunk=5,n_words=10)
+    mglearn.tools.print_topics(topics=range(n_topics),feature_names=feature_names,sorting=sorting,topics_per_chunk=5,n_words=10)
     import matplotlib.pyplot as plt
     fig,ax=plt.subplots(1,2,figsize=(10,10))
     topic_names=["{:>2}".format(i)+" ".join(words)
